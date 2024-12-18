@@ -1,0 +1,44 @@
+.footerWrapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #e9c39a;
+    position: fixed;
+    bottom: 0;
+    left: 0;  /* Asegura que el footer se alinee con el borde izquierdo de la pantalla */
+    width: 100%; 
+    height: 3rem;
+    padding: 0; 
+    margin: 0; /* Elimina cualquier margen alrededor del footer */
+    z-index: 1000;
+}
+
+.imgFooterContainer {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    width: auto;
+    padding-left: 5rem;
+}
+
+.imgFooterContainer img {
+    margin: 0 10px;
+    max-height: 1.5rem;
+}
+
+.footerP {
+    color: black;
+    margin-left: auto; 
+    font-size: 1rem;
+    white-space: nowrap; 
+    padding-right: 5rem;
+}
+
+@media (max-width: 412px) {
+    .footerWrapp {
+        flex-direction: column; 
+        height: auto; 
+        padding: 0.5rem ; 
+    }
+}
